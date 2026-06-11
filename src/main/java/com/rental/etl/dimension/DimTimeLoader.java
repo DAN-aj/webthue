@@ -35,6 +35,7 @@ public class DimTimeLoader implements ETLJob {
         "VALUES (?,?,?,?,?,?,?,?,?,?,?)";
 
     private static final Map<String, Boolean> VN_HOLIDAYS = buildHolidays();
+    private static final Locale VI_LOCALE = Locale.of("vi");
 
     private final ETLContext ctx;
     private int rowsProcessed = 0;
@@ -71,9 +72,9 @@ public class DimTimeLoader implements ETLJob {
             for (LocalDate d = start; !d.isAfter(end); d = d.plusDays(1)) {
                 int dateKey = d.getYear() * 10000 + d.getMonthValue() * 100 + d.getDayOfMonth();
                 int dow = d.getDayOfWeek().getValue(); // 1=Mon..7=Sun
-                String dayName = d.getDayOfWeek().getDisplayName(TextStyle.FULL, new Locale("vi"));
+                String dayName = d.getDayOfWeek().getDisplayName(TextStyle.FULL, VI_LOCALE);
                 int week = d.get(java.time.temporal.WeekFields.ISO.weekOfWeekBasedYear());
-                String monthName = d.getMonth().getDisplayName(TextStyle.FULL, new Locale("vi"));
+                String monthName = d.getMonth().getDisplayName(TextStyle.FULL, VI_LOCALE);
                 int quarter = (d.getMonthValue() - 1) / 3 + 1;
                 boolean isWeekend = dow >= 6;
                 boolean isHoliday = VN_HOLIDAYS.containsKey(
