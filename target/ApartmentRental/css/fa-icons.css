@@ -1,0 +1,101 @@
+/* Font Awesome Stub - Unicode fallback for Edge Tracking Prevention */
+/* Sử dụng khi CDN bị block. Các icon quan trọng được map sang Unicode. */
+
+.fas, .far, .fab, .fa {
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  display: inline-block;
+  speak: never;
+}
+
+/* Navigation & UI */
+.fa-bars::before           { content: "☰"; }
+.fa-xmark::before          { content: "✕"; }
+.fa-chevron-down::before   { content: "▾"; }
+.fa-chevron-right::before  { content: "›"; }
+.fa-arrow-left::before     { content: "←"; }
+
+/* User */
+.fa-user::before               { content: "👤"; font-style:normal; }
+.fa-bell::before               { content: "🔔"; font-style:normal; }
+.fa-right-to-bracket::before   { content: "→"; }
+.fa-right-from-bracket::before { content: "↩"; }
+.fa-gauge-high::before         { content: "📊"; font-style:normal; }
+
+/* Property */
+.fa-home::before               { content: "🏠"; font-style:normal; }
+.fa-building::before           { content: "🏢"; font-style:normal; }
+.fa-key::before                { content: "🔑"; font-style:normal; }
+.fa-location-dot::before       { content: "📍"; font-style:normal; }
+.fa-expand::before             { content: "⤡"; }
+.fa-bed::before                { content: "🛏"; font-style:normal; }
+.fa-bath::before               { content: "🚿"; font-style:normal; }
+.fa-layer-group::before        { content: "⬛"; }
+.fa-eye::before                { content: "👁"; font-style:normal; }
+.fa-images::before             { content: "🖼"; font-style:normal; }
+.fa-lock::before               { content: "🔒"; font-style:normal; }
+.fa-map-location-dot::before   { content: "🗺"; font-style:normal; }
+
+/* Amenities */
+.fa-wifi::before               { content: "📶"; font-style:normal; }
+.fa-snowflake::before          { content: "❄"; }
+.fa-shirt::before              { content: "👕"; font-style:normal; }
+.fa-temperature-low::before    { content: "🧊"; font-style:normal; }
+.fa-tv::before                 { content: "📺"; font-style:normal; }
+.fa-utensils::before           { content: "🍴"; font-style:normal; }
+.fa-sun::before                { content: "☀"; }
+.fa-elevator::before           { content: "🛗"; font-style:normal; }
+.fa-square-parking::before     { content: "🅿"; font-style:normal; }
+.fa-dumbbell::before           { content: "🏋"; font-style:normal; }
+.fa-water-ladder::before       { content: "🏊"; font-style:normal; }
+.fa-bell-concierge::before     { content: "🔔"; font-style:normal; }
+.fa-tree::before               { content: "🌳"; font-style:normal; }
+.fa-fire-burner::before        { content: "🔥"; font-style:normal; }
+.fa-briefcase::before          { content: "💼"; font-style:normal; }
+.fa-video::before              { content: "📷"; font-style:normal; }
+.fa-paw::before                { content: "🐾"; font-style:normal; }
+.fa-circle-check::before       { content: "✓"; color: inherit; }
+
+/* Security & Trust */
+.fa-shield-halved::before      { content: "🛡"; font-style:normal; }
+.fa-id-card::before            { content: "🪪"; font-style:normal; }
+
+/* Contract & Payment */
+.fa-file-contract::before      { content: "📄"; font-style:normal; }
+.fa-coins::before              { content: "💰"; font-style:normal; }
+.fa-receipt::before            { content: "🧾"; font-style:normal; }
+.fa-credit-card::before        { content: "💳"; font-style:normal; }
+.fa-landmark::before           { content: "🏦"; font-style:normal; }
+.fa-wallet::before             { content: "👛"; font-style:normal; }
+.fa-clock::before              { content: "⏰"; font-style:normal; }
+.fa-calendar::before           { content: "📅"; font-style:normal; }
+.fa-calendar-days::before      { content: "📅"; font-style:normal; }
+.fa-check::before              { content: "✓"; }
+
+/* Alerts */
+.fa-triangle-exclamation::before { content: "⚠"; }
+.fa-circle-xmark::before         { content: "✕"; }
+.fa-circle-info::before          { content: "ℹ"; }
+
+/* Admin */
+.fa-users::before              { content: "👥"; font-style:normal; }
+.fa-plus::before               { content: "+"; font-weight:bold; }
+.fa-plus-circle::before        { content: "⊕"; }
+.fa-trash::before              { content: "🗑"; font-style:normal; }
+.fa-floppy-disk::before        { content: "💾"; font-style:normal; }
+.fa-paper-plane::before        { content: "✉"; }
+.fa-external-link-alt::before  { content: "↗"; }
+.fa-filter::before             { content: "▼"; font-size:.7em; }
+.fa-chart-bar::before          { content: "📊"; font-style:normal; }
+.fa-search::before             { content: "🔍"; font-style:normal; }
+
+/* Misc */
+.fa-phone::before              { content: "📞"; font-style:normal; }
+.fa-envelope::before           { content: "✉"; }
+.fa-comment-dots::before       { content: "💬"; font-style:normal; }
+
+/* Social */
+.fa-facebook-f::before  { content: "f"; font-weight:bold; }
+.fa-instagram::before   { content: "ig"; font-size:.7em; }
+.fa-youtube::before     { content: "▶"; }
